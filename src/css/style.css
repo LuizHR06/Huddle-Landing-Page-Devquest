@@ -1,43 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 body {
-    background: url('../images/bg-desktop.svg');
-    background-repeat: no-repeat;
-    
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
     background-color: hsl(257, 40%, 49%);
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
 
-main {
-    padding: 0 73px;
-}
-
-.logo {
-   width: 215px;
-   margin-top: 52px; 
-}
-
 .content {
     display: flex;
-    justify-content: space-between;
-    margin-top: 85px;
-}
-
-.content .content__info {
-    margin-top: 40px;
-    width: 600px;
-    padding-left: 52px;
-}
-
-.content .content__info .content__title {
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.content .content__info .content__text {
-    font-size: 17px;
-    margin: 20px 0 40px 0;
 }
 
 .content .btn-register {
@@ -46,19 +19,14 @@ main {
     padding: 15px 65px;
     font-size: 18px;
     transition: 0.3s ease-in-out;
-    box-shadow: 0px 10px 20px rgb(80, 69, 106)
+    box-shadow: 0px 10px 20px rgb(80, 69, 106);
+    margin-top: 30px;
+    display: inline-block;
 }
 
 .content .btn-register:hover {
-    background-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 51%);
     color: #fff;
-}
-
-.content .content__icons {
-    position: absolute;
-    bottom: 35px;
-    right: 70px;
-    text-align: center;
 }
 
 .content__icons a {
@@ -74,65 +42,6 @@ main {
 }
 
 .content__icons a:hover {
-    color: hsl(300, 69%, 71%);
-    border-color: hsl(300, 69%, 71%);;
-}
-
-@media (min-width: 1441px) {
-    body {
-        background-size: cover;
-    }
-
-    .content {
-        justify-content: center;
-    }
-} 
-
-@media (max-width: 375px) {
-    * {
-        max-width: 375px;
-    }
-
-    body {
-        background-image: url('../images/bg-mobile.svg');
-        height: 100vh;
-    }
-
-    .logo {
-        width: 150px;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .content .content__image {
-        width: 300px;
-    }
-    
-    .content .content__info {
-        padding: 10px 25px;
-    }
-
-    .content .content__info .content__title {
-        font-size: 25px;
-    }
-
-    .content .content__info .content__text  {
-        font-size: 15px;
-        margin: 15px;
-    }
-
-    .content .btn-register {
-        margin: 40px 50px;
-        display: block;
-        font-size: 15px;
-    }
-
-    .content .content__icons {
-        position: static;
-        margin-bottom: 50px;
-    }
+    color: hsl(300, 69%, 51%);
+    border-color: hsl(300, 69%, 51%);
 }
